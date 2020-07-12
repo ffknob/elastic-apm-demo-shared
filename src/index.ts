@@ -6,13 +6,13 @@
 
 declare module '@ffknob/elastic-apm-demo-shared/types' {
     // @ts-ignore
-    export * from '@ffknob/elastic-apm-demo-types/types/apm';
+    export * from '@ffknob/elastic-apm-demo-shared/types/apm';
     // @ts-ignore
-    export * from '@ffknob/elastic-apm-demo-types/types/auth';
+    export * from '@ffknob/elastic-apm-demo-shared/types/auth';
     // @ts-ignore
-    export * from '@ffknob/elastic-apm-demo-types/types/backend';
+    export * from '@ffknob/elastic-apm-demo-shared/types/backend';
     // @ts-ignore
-    export * from '@ffknob/elastic-apm-demo-types/types/metadata';
+    export * from '@ffknob/elastic-apm-demo-shared/types/metadata';
     // @ts-ignore
-    export * from '@ffknob/elastic-apm-demo-types/types/simulation';
+    export * from '@ffknob/elastic-apm-demo-shared/types/simulation';
 }
