@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "es2015",
+        "outDir": "./dist",
+        "strict": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true
+    },
+    "include": [
+        "src/**/*"
+    ]
+}
+
