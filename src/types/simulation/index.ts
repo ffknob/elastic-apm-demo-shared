@@ -5,6 +5,7 @@ export { SimulationParameters } from './SimulationParameters';
 export { SimulationRequestError } from './SimulationRequestError';
 export { SimulationRequestResult } from './SimulationRequestResult';
 export { SimulationRequest } from './SimulationRequest';
+export { SimulationResponse } from './SimulationResponse';
 export { SimulationStatsTime } from './SimulationStatsTime';
 export { SimulationStats } from './SimulationStats';
 export { SimulationType } from './SimulationType';
