@@ -1,2 +1,1 @@
-# elastic-apm-demo-types
-Elastic APM demo: Types
+# Elastic APM demo: Shared
