@@ -1,3 +1,4 @@
+export { Simulation } from './Simulation';
 export { SimulationExecution } from './SimulationExecution';
 export { SimulationOptions } from './SimulationOptions';
 export { SimulationParameters } from './SimulationParameters';

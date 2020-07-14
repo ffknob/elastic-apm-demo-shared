@@ -1,6 +1,6 @@
 {
     "name": "@ffknob/elastic-apm-demo-shared",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Elastic APM demo: Shared",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -23,6 +23,7 @@
     "homepage": "https://github.com/ffknob/elastic-apm-demo-shared#readme",
     "devDependencies": {
         "@types/axios": "^0.14.0",
+        "@types/rx": "^4.1.2",
         "eslint": "^7.4.0",
         "eslint-config-typescript": "^3.0.0"
     },
