@@ -1,3 +1,5 @@
+import { NetworkInterfaceInfo } from 'os';
+
 export interface HostMetadata {
     hostname?: string;
     type?: string;
@@ -5,9 +7,9 @@ export interface HostMetadata {
     arch?: string;
     release?: string;
     uptime?: number;
-    loadavg?: [number, number, number];
+    loadavg?: number[];
     totalmem?: number;
     freemem?: number;
     cpus?: any[];
-    networkInterfaces?: any[];
+    networkInterfaces?: { [index: string]: NetworkInterfaceInfo[] };
 }
