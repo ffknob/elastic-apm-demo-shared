@@ -8,3 +8,5 @@ export * from '@ffknob/elastic-apm-demo-shared/dist/types/backend';
 export * from '@ffknob/elastic-apm-demo-shared/dist/types/metadata';
 // @ts-ignore
 export * from '@ffknob/elastic-apm-demo-shared/dist/types/simulation';
+// @ts-ignore
+export * from '@ffknob/elastic-apm-demo-shared/dist/types/util';

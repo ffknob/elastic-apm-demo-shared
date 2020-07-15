@@ -1,3 +1,3 @@
 import { SimulationResponse } from './SimulationResponse';
 
-export interface SimulationResponseResult<T> extends SimulationResponse {}
+export interface SimulationResponseResult extends SimulationResponse {}
