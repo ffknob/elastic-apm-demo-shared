@@ -1,10 +1,9 @@
-import { BackendResponseMetadata } from '../backend';
+import { BackendResponseMetadata } from '../metadata';
 
-export interface BackendResponse<T> {
+export interface BackendResponse {
     id?: string;
     success: boolean;
     statusCode: number;
     statusMessage: string;
     metadata?: BackendResponseMetadata;
-    body?: T;
 }

@@ -4,7 +4,7 @@ import {
     KubernetesMetadata
 } from '../metadata';
 
-export interface SimulationResponseMetadata {
+export interface BackendResponseMetadata {
     host?: Partial<HostMetadata>;
     container?: Partial<ContainerMetadata>;
     kubernetes?: Partial<KubernetesMetadata>;

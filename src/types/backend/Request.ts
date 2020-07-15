@@ -6,10 +6,10 @@ import {
     BackendResponse
 } from '../backend';
 
-export interface Request<T, U> {
+export interface Request<T> {
     id: string;
     request: BackendRequest<T>;
-    response?: BackendResponse<U>;
-    response$?: Observable<BackendResponse<U>>;
+    response?: BackendResponse;
+    response$?: Observable<BackendResponse>;
     time: BackendRequestTime;
 }

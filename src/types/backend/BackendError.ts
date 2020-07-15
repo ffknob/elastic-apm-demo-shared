@@ -1,7 +1,4 @@
-export interface BackendError<T> {
-    code?: number | string;
-    category?: string;
-    name?: string;
-    message?: string;
-    data?: T;
-}
+import { BackendResponse } from '../backend';
+import { GenericError } from '../util';
+
+export interface BackendError<T> extends BackendResponse, GenericError<T> {}

@@ -4,10 +4,10 @@ import {
     SimulationRequest,
     SimulationStats,
     SimulationType,
-    SimulationRequestResult,
-    SimulationRequestError
+    SimulationResponseResult,
+    SimulationResponseError
 } from '../simulation';
-import { Request, BackendSuccess, BackendError } from '../backend';
+import { Request } from '../backend';
 
 export interface Simulation {
     id?: string;
@@ -17,18 +17,8 @@ export interface Simulation {
     totalSubTransactions?: number;
     totalSpans?: number;
     simulationRequest?: SimulationRequest;
-    requests?: Request<
-        SimulationRequest,
-        | BackendSuccess<SimulationRequestResult>
-        | BackendError<SimulationRequestError>
-    >[];
-    requests$?: Subject<
-        Request<
-            SimulationRequest,
-            | BackendSuccess<SimulationRequestResult>
-            | BackendError<SimulationRequestError>
-        >[]
-    >;
+    requests?: Request<SimulationRequest>[];
+    requests$?: Subject<Request<SimulationRequest>[]>;
     stats?: SimulationStats;
     stats$?: Subject<SimulationStats>;
 }

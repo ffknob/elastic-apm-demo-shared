@@ -1,6 +1,6 @@
 import { SimulationResponse } from './SimulationResponse';
-import { BackendError } from '../backend';
+import { GenericError } from '../util';
 
 export interface SimulationResponseError<T> extends SimulationResponse {
-    errors: BackendError<T>[];
+    errors: GenericError<T>[];
 }
