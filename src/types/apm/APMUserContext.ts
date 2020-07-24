@@ -1,5 +1,5 @@
 export interface APMUserContext {
-    id?: number;
+    id?: string | number;
     username?: string;
     email?: string;
 }
