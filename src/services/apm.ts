@@ -9,11 +9,11 @@ import {
     TransactionOptions,
     SpanOptions,
     Span,
-    Agent
+    Agent,
+    ParameterizedMessageObject
 } from '../types/apm'; //'elastic-apm-node';
 
 import { APMUserContext } from '../types/apm';
-import { SimulationUserContext } from '../types/simulation';
 
 export class ApmService {
     private static instance: ApmService | null = null;
@@ -66,7 +66,7 @@ export class ApmService {
     setCustomContext() {}
 
     captureError(
-        error: Error,
+        error: Error | string | ParameterizedMessageObject,
         options?: CaptureErrorOptions,
         callback?: CaptureErrorCallback
     ) {
