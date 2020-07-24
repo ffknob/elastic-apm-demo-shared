@@ -9,3 +9,4 @@ export { SimulationResponseResult } from './SimulationResponseResult';
 export { SimulationStatsTime } from './SimulationStatsTime';
 export { SimulationStats } from './SimulationStats';
 export { SimulationType } from './SimulationType';
+export { SimulationUserContext } from './SimulationUserContext';

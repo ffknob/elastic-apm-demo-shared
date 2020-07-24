@@ -1,6 +1,6 @@
 {
     "name": "@ffknob/elastic-apm-demo-shared",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "description": "Elastic APM demo: Shared",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -25,10 +25,15 @@
         "@types/axios": "^0.14.0",
         "@types/node": "^14.0.23",
         "@types/rx": "^4.1.2",
+        "@types/uuid": "^3.4.6",
         "eslint": "^7.4.0",
         "eslint-config-typescript": "^3.0.0"
     },
-    "dependencies": {},
+    "dependencies": {
+        "elastic-apm-node": "^3.6.1",
+        "fakerator": "^0.3.0",
+        "uuid": "^3.3.2"
+    },
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/"
     }
