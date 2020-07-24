@@ -10,5 +10,3 @@ export * from '@ffknob/elastic-apm-demo-shared/dist/types/metadata';
 export * from '@ffknob/elastic-apm-demo-shared/dist/types/simulation';
 // @ts-ignore
 export * from '@ffknob/elastic-apm-demo-shared/dist/types/util';
-// @ts-ignore
-export * from '@ffknob/elastic-apm-demo-shared/dist/types/fakerator';

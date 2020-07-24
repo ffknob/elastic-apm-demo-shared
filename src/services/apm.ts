@@ -1,5 +1,4 @@
 import uuid from 'uuid';
-import Fakerator from 'fakerator';
 import apm from 'elastic-apm-node/start';
 import {
     Transaction,
@@ -12,6 +11,8 @@ import {
     Span,
     Agent
 } from '../types/apm'; //'elastic-apm-node';
+
+import { APMUserContext } from '../types/apm';
 import { SimulationUserContext } from '../types/simulation';
 
 export class ApmService {
@@ -52,30 +53,11 @@ export class ApmService {
         apm.setLabel(name, value);
     }
 
-    setUserContext(userContext: SimulationUserContext) {
-        let id: string | number;
-        let firstName: string;
-        let lastName: string;
-        let username: string;
-        let email: string;
-
-        const fakerator = Fakerator();
-
-        if (userContext.random) {
-            firstName = fakerator.names.firstName();
-            lastName = fakerator.names.lastName();
-            username = fakerator.internet.userName(firstName, lastName);
-            email = fakerator.internet.email(firstName, lastName);
-        } else {
-            id = userContext.id;
-            username = userContext.username;
-            email = userContext.email;
-        }
-
+    setUserContext(userContext: APMUserContext) {
         const userObject: UserObject = {
-            id: uuid.v4(),
-            username: username,
-            email: email
+            id: userContext.id || uuid.v4(),
+            username: userContext.username || undefined,
+            email: userContext.email || undefined
         };
 
         apm.setUserContext(userObject);

@@ -1,8 +1,7 @@
-export interface SimulationUserContext {
-    id: number;
+import { APMUserContext } from '../apm';
+
+export interface SimulationUserContext extends APMUserContext {
     firstName: string;
     lastName: string;
-    username: string;
-    email: string;
     random: boolean;
 }
