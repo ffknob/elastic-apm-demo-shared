@@ -1,6 +1,6 @@
 {
     "name": "@ffknob/elastic-apm-demo-shared",
-    "version": "1.0.20",
+    "version": "1.0.21",
     "description": "Elastic APM demo: Shared",
     "author": "Flávio Franco Knob <ffknob@gmail.com> (http://ffknob.com)",
     "license": "ISC",
