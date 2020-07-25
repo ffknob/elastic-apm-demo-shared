@@ -9,15 +9,15 @@
         "url": "https://github.com/ffknob/elastic-apm-demo-shared/issues"
     },
     "keywords": [],
-    "main": "dist/cjs/index.js",
-    "module": "dist/esm/index.js",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
         "dist/"
     ],
     "scripts": {
         "clean": "rm -rf dist/",
-        "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+        "build": "tsc",
         "format": "prettier --write \"src/**/*.ts\"",
         "lint": "./node_modules/.bin/eslint src/**/*.ts",
         "prepublish": "tsc"
@@ -30,7 +30,7 @@
         "@types/axios": "^0.14.0",
         "@types/node": "^14.0.23",
         "@types/rx": "^4.1.2",
-        "@types/uuid": "^3.4.6",
+        "@types/uuid": "^3.4.9",
         "eslint": "^7.4.0",
         "eslint-config-typescript": "^3.0.0",
         "prettier": "^2.0.5"
@@ -38,7 +38,7 @@
     "dependencies": {
         "elastic-apm-node": "^3.6.1",
         "fakerator": "^0.3.0",
-        "uuid": "^3.3.2"
+        "uuid": "^3.4.0"
     },
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/"
