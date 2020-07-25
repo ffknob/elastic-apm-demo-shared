@@ -1,3 +1,3 @@
 export interface SimulationResponse {
-    success: boolean;
+  success: boolean;
 }

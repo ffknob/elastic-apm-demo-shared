@@ -1,6 +1,6 @@
 export interface KubernetesMetadata {
-    kubernetesNodeName: string;
-    kubernetesNamespace: string;
-    kubernetesPodName: string;
-    kubernetesPodUid: string;
+  kubernetesNodeName: string;
+  kubernetesNamespace: string;
+  kubernetesPodName: string;
+  kubernetesPodUid: string;
 }

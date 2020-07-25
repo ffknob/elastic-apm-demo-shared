@@ -1,6 +1,6 @@
 export interface SimulationParameters {
-    numberOfRequests: number;
-    interval: number;
-    maxRandomDelay: number;
-    timeout: number;
+  numberOfRequests: number;
+  interval: number;
+  maxRandomDelay: number;
+  timeout: number;
 }

@@ -2,13 +2,23 @@
     "name": "@ffknob/elastic-apm-demo-shared",
     "version": "1.0.19",
     "description": "Elastic APM demo: Shared",
+    "author": "Flávio Franco Knob <ffknob@gmail.com> (http://ffknob.com)",
+    "license": "ISC",
+    "homepage": "https://github.com/ffknob/elastic-apm-demo-shared#readme",
+    "bugs": {
+        "url": "https://github.com/ffknob/elastic-apm-demo-shared/issues"
+    },
+    "keywords": [],
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
     "types": "dist/index.d.ts",
-    "files": ["dist/"],
+    "files": [
+        "dist/"
+    ],
     "scripts": {
         "clean": "rm -rf dist/",
         "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+        "format": "prettier --write \"src/**/*.ts\"",
         "lint": "./node_modules/.bin/eslint src/**/*.ts",
         "prepublish": "tsc"
     },
@@ -16,20 +26,14 @@
         "type": "git",
         "url": "git+https://github.com/ffknob/elastic-apm-demo-shared.git"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/ffknob/elastic-apm-demo-shared/issues"
-    },
-    "homepage": "https://github.com/ffknob/elastic-apm-demo-shared#readme",
     "devDependencies": {
         "@types/axios": "^0.14.0",
         "@types/node": "^14.0.23",
         "@types/rx": "^4.1.2",
         "@types/uuid": "^3.4.6",
         "eslint": "^7.4.0",
-        "eslint-config-typescript": "^3.0.0"
+        "eslint-config-typescript": "^3.0.0",
+        "prettier": "^2.0.5"
     },
     "dependencies": {
         "elastic-apm-node": "^3.6.1",

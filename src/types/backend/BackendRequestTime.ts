@@ -1,5 +1,5 @@
 export interface BackendRequestTime {
-    start: Date;
-    end?: Date;
-    took?: number;
+  start: Date;
+  end?: Date;
+  took?: number;
 }
