@@ -1,6 +1,6 @@
 {
     "name": "@ffknob/elastic-apm-demo-shared",
-    "version": "1.0.21",
+    "version": "1.0.22",
     "description": "Elastic APM demo: Shared",
     "author": "Flávio Franco Knob <ffknob@gmail.com> (http://ffknob.com)",
     "license": "ISC",
@@ -20,6 +20,7 @@
         "build": "tsc",
         "format": "prettier --write \"src/**/*.ts\"",
         "lint": "./node_modules/.bin/eslint src/**/*.ts",
+        "test": "echo \"(todo)\"",
         "prepublish": "tsc"
     },
     "repository": {
@@ -31,14 +32,17 @@
         "@types/node": "^14.0.23",
         "@types/rx": "^4.1.2",
         "@types/uuid": "^3.4.9",
+        "@types/winston": "^2.4.4",
         "eslint": "^7.4.0",
         "eslint-config-typescript": "^3.0.0",
         "prettier": "^2.0.5"
     },
     "dependencies": {
         "elastic-apm-node": "^3.6.1",
+        "express-winston": "^4.0.5",
         "fakerator": "^0.3.0",
-        "uuid": "^3.4.0"
+        "uuid": "^3.4.0",
+        "winston": "^3.3.3"
     },
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/"
