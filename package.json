@@ -39,7 +39,6 @@
     },
     "dependencies": {
         "elastic-apm-node": "^3.6.1",
-        "express-winston": "^4.0.5",
         "fakerator": "^0.3.0",
         "uuid": "^3.4.0",
         "winston": "^3.3.3"
