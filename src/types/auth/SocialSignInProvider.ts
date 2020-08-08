@@ -1,4 +1,4 @@
-export type SocialSignInProviders =
+export type SocialSignInProvider =
     | 'google'
     | 'facebook'
     | 'github'
