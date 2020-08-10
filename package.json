@@ -21,7 +21,11 @@
         "format": "prettier --write \"src/**/*.ts\"",
         "lint": "./node_modules/.bin/eslint src/**/*.ts",
         "test": "echo \"(todo)\"",
-        "prepublish": "tsc"
+        "prepublish": "tsc",
+        "local-publish": "cp -R dist/* ../{api,app,auth,data,simulation}/node_modules/@ffknob/elastic-apm-demo-shared/dist/",
+        "clean-build": "npm run clean && npm run build",
+        "clean-build-publish": "npm run clean-build && npm publish",
+        "clean-build-local-publish": "npm run clean-build && npm run local-publish"
     },
     "repository": {
         "type": "git",
