@@ -1,3 +1,3 @@
 import { SocialSignInProvider } from './SocialSignInProvider';
 
-export type SignInProvider = SocialSignInProvider & 'local';
+export type SignInProvider = SocialSignInProvider | 'local';
