@@ -1,6 +1,6 @@
 import { BackendResponse } from '../backend';
 
 export interface BackendRedirect<T> extends BackendResponse {
-    location: URL;
+    location: string;
     data?: T;
 }
