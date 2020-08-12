@@ -9,11 +9,14 @@ export interface User {
     image?: string;
     google?: {
         id: string;
+        data: { [key: string]: any };
     };
     github?: {
         id: string;
+        data: { [key: string]: any };
     };
     linkedIn?: {
         id: string;
+        data: { [key: string]: any };
     };
 }
